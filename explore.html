@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro World</title>
+    <link rel="icon" href="icon.ico">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="explore.css">
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body  style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: black;">
+    <div>
+        <img src="explore.jpg" width="100%">
+        <div class=" big-heading top-left">Explore Farming !</div>
+        <div class="top-right">
+          <div class="dropdown">
+            <button onclick="myFunction()" class="btn btn-success"><i class="fas fa-search"></i> Search For Crops</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#crop1" onclick="showAndHidecrop1()">Crop 1</a>
+              <a href="#crop2" onclick="showAndHidecrop2()">Crop 2</a>
+              <a href="#crop3" onclick="showAndHidecrop3()">Crop 3</a>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="accordion" id="accordionExample">
+      <div id="crops1" style="display: none;">
+        <div class="card">
+          <div class="card-header" id="headingOne" style="background-color:green;">
+            <h2 class="mb-0">
+              <button class="btn btn-link" id ="crop1" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color: white; font-size: 25px;">
+                <b>Crop Name 1 <i class="arrow down"></i></b>
+              </button>
+            </h2>
+          </div>
+          
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body" style="background-color:orangered">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Description <i class="arrow2 down2"></i></button>   <br>    
+                    <div class="collapse" id="collapseExample1">
+                      <div class="card card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                      </div>
+                    </div>            
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Propagation <i class="arrow2 down2"></i></button>  <br>
+                    <div class="collapse" id="collapseExample2">
+                      <div class="card card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                      </div>
+                    </div>
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Physiological Disorders <i class="arrow2 down2"></i></button>  <br>   
+                    <div class="collapse" id="collapseExample3">
+                      <div class="card card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                      </div>
+                    </div>                              
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2" style="color: white; font-size: 15px;">Strategies & Fertilisers <i class="arrow2 down2"></i></button>
+                    <div class="row">
+                    <div class="col">
+                      <div class="collapse multi-collapse" id="multiCollapseExample1">
+                        <div class="card card-body">
+                          <h4 style="text-align: center;"> Strategies </h4>
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="collapse multi-collapse" id="multiCollapseExample2">
+                        <div class="card card-body">
+                          <h4 style="text-align: center;"> Fertilisers </h4>
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div id="crops2" style="display: none;">
+          <div class="card">
+            <div class="card-header" id="headingOne" style="background-color:green;">
+              <h2 class="mb-0">
+                <button class="btn btn-link" id ="crop2" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" style="color: white; font-size: 25px;">
+                  <b>Crop Name 2 <i class="arrow down"></i></b>
+                </button>
+              </h2>
+            </div>
+            
+            <div id="collapseTwo" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body" style="background-color:orangered">
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Description <i class="arrow2 down2"></i></button>   <br>    
+                      <div class="collapse" id="collapseExample4">
+                        <div class="card card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                        </div>
+                      </div>            
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Propagation <i class="arrow2 down2"></i></button>  <br>
+                      <div class="collapse" id="collapseExample5">
+                        <div class="card card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                        </div>
+                      </div>
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Physiological Disorders <i class="arrow2 down2"></i></button>  <br>   
+                      <div class="collapse" id="collapseExample6">
+                        <div class="card card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                        </div>
+                      </div>                              
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target=".multi-collapse2" aria-expanded="false" aria-controls="multiCollapseExample3 multiCollapseExample4" style="color: white; font-size: 15px;">Strategies & Fertilisers <i class="arrow2 down2"></i></button>
+                      <div class="row">
+                      <div class="col">
+                        <div class="collapse multi-collapse2" id="multiCollapseExample3">
+                          <div class="card card-body">
+                            <h4 style="text-align: center;"> Strategies </h4>
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="collapse multi-collapse2" id="multiCollapseExample4">
+                          <div class="card card-body">
+                            <h4 style="text-align: center;"> Fertilisers </h4>
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div id="crops3" style="display: none;">
+            <div class="card">
+              <div class="card-header" id="headingOne" style="background-color:green;">
+                <h2 class="mb-0">
+                  <button class="btn btn-link" id ="crop3" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree" style="color: white; font-size: 25px;">
+                    <b>Crop Name 3 <i class="arrow down"></i></b>
+                  </button>
+                </h2>
+              </div>
+              
+              <div id="collapseThree" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body" style="background-color:orangered">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Description <i class="arrow2 down2"></i></button>   <br>    
+                        <div class="collapse" id="collapseExample7">
+                          <div class="card card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                          </div>
+                        </div>            
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample8" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Propagation <i class="arrow2 down2"></i></button>  <br>
+                        <div class="collapse" id="collapseExample8">
+                          <div class="card card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                          </div>
+                        </div>
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample9" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Physiological Disorders <i class="arrow2 down2"></i></button>  <br>   
+                        <div class="collapse" id="collapseExample9">
+                          <div class="card card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                          </div>
+                        </div>                              
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target=".multi-collapse3" aria-expanded="false" aria-controls="multiCollapseExample5 multiCollapseExample6" style="color: white; font-size: 15px;">Strategies & Fertilisers <i class="arrow2 down2"></i></button>
+                        <div class="row">
+                        <div class="col">
+                          <div class="collapse multi-collapse3" id="multiCollapseExample5">
+                            <div class="card card-body">
+                              <h4 style="text-align: center;"> Strategies </h4>
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="collapse multi-collapse3" id="multiCollapseExample6">
+                            <div class="card card-body">
+                              <h4 style="text-align: center;"> Fertilisers </h4>
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+      <script src="explore.js"></script>
+</body>
+</html>
